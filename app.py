@@ -83,10 +83,8 @@ class App:
     def add_parameter_ui(self):
         if self.classifier_name == "SVM":
             self.params = {"C": [0.01, 0.1, 1, 10, 100]}
-
         elif self.classifier_name == "KNN":
             self.params = {"n_neighbors": [1, 3, 5, 7, 9]}
-
         elif self.classifier_name == "Naive-Bayes":
             self.params = {"alpha": np.arange(0, 1.1, 0.1)}  # alpha_values
 
